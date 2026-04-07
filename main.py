@@ -5,7 +5,7 @@ from collections import Counter, defaultdict
 #words_3000 = load_words("data/Oxford 3000.txt")
 #words_extra = load_words("data/Oxford 5000.txt")
 #word_list = list(set(words_3000 + words_extra))
-word_list = load_words('data/words.txt')
+word_list = load_words('data/en_AU-large.txt')
 
 
 def get_user_input():

@@ -13,7 +13,13 @@ A solver for word game Target
 
 
 ## Data Source
-This project uses the Oxford 5000 word list sourced from:
-https://github.com/jnoodle/English-Vocabulary-Word-List
+This project currently uses the `en_AU-large` English word list from SCOWL / Aspell:
+https://wordlist.aspell.net/
+
+The raw word list is filtered in code to better match the game rules by removing:
+- words shorter than four letters
+- capitalised words and acronyms
+- words containing apostrophes, hyphens, or other non-alphabetic characters
+- duplicate entries
 
 The dataset is used for educational and non-commercial purposes.
