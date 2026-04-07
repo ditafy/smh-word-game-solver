@@ -2,13 +2,15 @@ from loader import load_words
 from collections import Counter
 
 #load word list
-words_3000 = load_words("data/Oxford 3000.txt")
-words_extra = load_words("data/Oxford 5000.txt")
-word_list = list(set(words_3000 + words_extra))
+#words_3000 = load_words("data/Oxford 3000.txt")
+#words_extra = load_words("data/Oxford 5000.txt")
+#word_list = list(set(words_3000 + words_extra))
+word_list = load_words('data/words.txt')
+
 
 #test input
-letters = ['a', 't', 'g', 'i', 'i', 'a', 't', 'o', 'n']
-center = 'n'
+letters = ['r', 'i', 'y', 'i', 'e', 'w', 'f', 'd', 'm']
+center = 'e'
 if center not in letters:
     raise ValueError("Center letter must be included in letters")
 
